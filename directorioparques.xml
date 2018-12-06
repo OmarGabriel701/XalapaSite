@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="directorioparques.xsl" type= "text/xsl"?>
+<DIRECTORIO>
+    <PARQUE>
+        <LUGAR>Parque "Los Tecajetes"</LUGAR>
+        <HORARIO> Lunes a Domingo de 07:00 a 18:00 hrs</HORARIO>
+        <COSTOS>Gratuito</COSTOS>
+    </PARQUE>
+    <PARQUE>
+        <LUGAR>Parque "Natura"</LUGAR>
+        <HORARIO>Lunes a Domingo de 06:00 a 18:00 hrs</HORARIO>
+        <COSTOS>Gratuito</COSTOS>
+    </PARQUE>
+    <PARQUE>
+        <LUGAR>Parque ecologico Macuiltepetl </LUGAR>
+        <HORARIO>Lunes a Domingo 10am a 18:00 hrs</HORARIO>
+        <COSTOS>$18 pesos adultos y adolescentes. $9 pesos niños.</COSTOS>
+    </PARQUE>
+
+</DIRECTORIO>

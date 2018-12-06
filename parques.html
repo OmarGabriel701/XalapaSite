@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>InforXalapa - Parques</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilos.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div align="center">
+        <h1>Parques de Xalapa</h1>
+    
+      <h4> Horarios</h4>  <a id="cargaDirectorio" ><img src="img/time.png" ></a>
+    </div>
+    <div align="center">
+            <nav class="menu">
+                    <ul class="active">
+                        <li class="current-item"><a href="index.html">Inicio</a></li>
+                        <li><a href="#">Parques</a></li>
+                        <li><a href="#">Plazas Comerciales</a></li>
+                        <li><a href="#">Entretenimiento</a></li>
+                        <li><a href="#">Restaurantes</a></li>
+                        <li><a href="#">Centros Nocturnos</a></li>
+                    </ul>
+                </nav>
+    </div>
+    <form class="form2">
+            <div align="center">
+            <table id="demo"></table>
+            </div>
+    </form>
+
+    <form class="form2">
+            <div align="center">
+                    <table id="demo"></table>
+                    <h3>PARQUE "LOS TECAJETES"</h3>
+                    <img class="img"src="img/teca.png" >
+                    <img class="img"src="img/teca2.png" >
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.237988626356!2d-96.93308888556251!3d19.531393586828273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85db2e07f76cec43%3A0xcb72b3e502a2fccf!2sParque+Los+Tecajetes!5e0!3m2!1ses-419!2smx!4v1544065022879" width="800" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <img class="img"src="img/teca3.png" >
+                    <img class="img"src="img/teca4.png" >
+                    <img class="img"src="img/tecades.png" >
+                    <button class="boton2">Agregar a mi lista</button>
+                </div>  
+    </form> 
+    <form class="form2">
+            <div align="center">
+                    <h3>PARQUE "NATURA"</h3>
+                    <img src="img/natura4.png" >
+                    <img src="img/natura2.png" >
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7521.203125071739!2d-96.88974287674877!3d19.51577065547752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85db321abe56b139%3A0x2c7ea89e42aef48e!2sParque+Natura!5e0!3m2!1ses-419!2smx!4v1544067207273" width="800" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <img src="img/natura3.png" >
+                    <img src="img/natura1.png" >
+                    <img class="img"src="img/naturades.png" >
+                    <button class="boton2">Agregar a mi lista</button>
+            </div>  
+    </form> 
+    <form class="form2">
+            <div align="center">
+                    <h3> PARQUE ECOLOGICO MACUILTÉPETL</h3>
+                    <img src="img/cm1.png" >
+                    <img src="img/cm2.png" >
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7519.7389621853!2d-96.92591338973354!3d19.547216273433957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85db3213077c387d%3A0xf5f5e78927c7c478!2zUGFycXVlIEVjb2zDs2dpY28gIk1hY3VpbHTDqXBldGwi!5e0!3m2!1ses-419!2smx!4v1544071177703" width="800" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <img src="img/cm3.png" >
+                    <img src="img/cm4.png" >
+                    <img class="img"src="img/cerrodes.png" >
+                    <button class="boton2">Agregar a mi lista</button>
+            </div>  
+    </form> 
+    
+</body>
+
+<script>
+        document.getElementById("cargaDirectorio").addEventListener("click", cargarDirectorio);
+        function cargarDirectorio() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    cargarXML(this);
+                }
+            };
+            xhr.open("GET", "directorioparques.xml", true);
+            xhr.send();
+        }
+
+        
+        function cargarXML(xml) {
+            var docXML = xml.responseXML;
+            var tabla = "<tr><th>Parque</th><th>Horario</th><th>Costos</th></tr>";
+            var parques = docXML.getElementsByTagName("PARQUE");
+            for (var i = 0; i < parques.length; i++) {
+                tabla += "<tr><td>";
+                tabla += parques[i].getElementsByTagName("LUGAR")[0].textContent;
+                tabla += "</td><td>";
+                tabla += parques[i].getElementsByTagName("HORARIO")[0].textContent;
+                tabla += "</td><td>";
+                tabla += parques[i].getElementsByTagName("COSTOS")[0].textContent;
+                tabla += "</td></tr>";
+
+            document.getElementById("demo").innerHTML = tabla;
+        }
+    }
+      
+    </script>
+
+</html>
