@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="directoriorestaurante.xsl" type= "text/xsl"?>
+<DIRECTORIO>
+    <RESTAURANTE>
+        <LUGAR>Asadero Cien</LUGAR>
+        <HORARIO>Lunes a Sabado de 8:00 - 00:30 hrs  | Domingo 10:00 - 23:00 hrs</HORARIO>
+    </RESTAURANTE>
+    <RESTAURANTE>
+        <LUGAR>El Churrasco</LUGAR>
+        <HORARIO>Lunes a Sabado de 13:30 - 00:00 hrs | Domingo 13:30 - 19:00 hrs</HORARIO>
+    </RESTAURANTE>
+    <RESTAURANTE>
+        <LUGAR>Butchers</LUGAR>
+        <HORARIO>Lunes a Sabado 13:00 a 1:00 hrs </HORARIO>
+    </RESTAURANTE>
+
+</DIRECTORIO>

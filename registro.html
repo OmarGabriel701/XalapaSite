@@ -6,7 +6,7 @@
     <title>InforXalapa - Registro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/estilos.css" />
-    <script src="main.js"></script>
+    <script type="application/javascript" src="registro.js"></script>
 </head>
 <body>
     <div align="center">
@@ -25,20 +25,24 @@
                     </ul>
                 </nav>
     </div>
-            <form>
-                    <label for="nombre" class="first-name">Nombre</label>
-                    <input id="nombre" type="text" autocomplete="off">
+    <form action="javascript:;">
+                    <label  class="first-name">Nombre</label>
+                    <input name="nombre" id="nombre" type="text" autocomplete="off">
         
-                    <label for="user" class="user">Usuario</label>
-                    <input id="user" type="text" autocomplete="off">
+                    <label  class="user">Usuario</label>
+                    <input name="user" id="user" type="text" autocomplete="off">
         
-                    <label for="email" class="email">Correo electrónico</label>
-                    <input id="email" type="email" autocomplete="off">
+                    <label  class="email">Correo electrónico</label>
+                    <input name="email" id="email" type="email" autocomplete="off">
         
                     <label for="pass" class="pass">Contraseña</label>
-                    <input id="pass" type="password" autocomplete="off">
+                    <input name="pass" id="pass" type="password" autocomplete="off">
         
-                    <button class="boton3">Registrar</button>
+                    <button id="btnRegister" type="submit" class="boton3">Registrar</button>
             </form>
+            <script>
+            document.getElementById("btnRegister").addEventListener("click", enviarPeticion);
+            </script>
+           
 </body>
 </html>

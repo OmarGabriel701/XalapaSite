@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="directorioentretenimiento.xsl" type= "text/xsl"?>
+<DIRECTORIO>
+    <ENTRETENIMIENTO>
+        <LUGAR>Teatro del Estado</LUGAR>
+        <HORARIO>Sujeta a Disponibilidad de Eventos</HORARIO>
+    </ENTRETENIMIENTO>
+    <ENTRETENIMIENTO>
+        <LUGAR>Sala de Conciertos Tlaqná</LUGAR>
+        <HORARIO>Lunes a Viernes de 09:00 a 15:00 hrs</HORARIO>
+    </ENTRETENIMIENTO>
+    <ENTRETENIMIENTO>
+        <LUGAR>Ágora de la Ciudad</LUGAR>
+        <HORARIO>Lunes a Vienes 9:00 a 15:00 hrs | 16:00 hrs a 18:00 hrs</HORARIO>
+    </ENTRETENIMIENTO>
+
+</DIRECTORIO>

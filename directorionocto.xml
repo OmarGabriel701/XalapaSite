@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="directorionocto.xsl" type= "text/xsl"?>
+<DIRECTORIO>
+    <NOCTO>
+        <LUGAR>Barezzito</LUGAR>
+        <HORARIO> Miercoles a Sabado de 21:00 a 4:00 hrs</HORARIO>
+    </NOCTO>
+    <NOCTO>
+        <LUGAR>Republica Xalapa</LUGAR>
+        <HORARIO>Miercoles a sabado de 22:00 a 4:00 hrs</HORARIO>
+    </NOCTO>
+    <NOCTO>
+        <LUGAR>La Tiendita</LUGAR>
+        <HORARIO>Lunes a Sabado de 12:00 a 2:00 hrs</HORARIO>
+    </NOCTO>
+
+</DIRECTORIO>

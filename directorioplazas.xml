@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="directorioplazas.xsl" type= "text/xsl"?>
+<DIRECTORIO>
+    <PLAZA>
+        <LUGAR>Plaza "Las Americas Xalapa"</LUGAR>
+        <HORARIO> Lunes a Domingo de 10:00 a 23:00 hrs</HORARIO>
+    </PLAZA>
+    <PLAZA>
+        <LUGAR>Plaza "Museo"</LUGAR>
+        <HORARIO>Lunes a Domingo de 07:00 a 23:00 hrs</HORARIO>
+    </PLAZA>
+    <PLAZA>
+        <LUGAR>Plaza "Crystal" </LUGAR>
+        <HORARIO>Lunes a Domingo de 08:00 a 22:00 hrs</HORARIO>
+    </PLAZA>
+
+</DIRECTORIO>
